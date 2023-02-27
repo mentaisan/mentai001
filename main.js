@@ -59,7 +59,7 @@ const startScan = () => {
             keyService = service;
             console.log('Getting Notification Characteristic...');
             //複数のCharacteristicを使う場合はここから更に登録する
-            return service.getCharacteristic(//使用するCharaceristicUUID);
+            return service.getCharacteristic("");
         })
         //Characteristicの動作
         .then(characteristic => {
